@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>jQuery One Page Scroll by Pete R. | The Pete Design</title>
-	<meta name="title" content="jQuery One Page Scroll by Pete R. | The Pete Design" />
+	<title>YonFace </title>
+	<meta name="title" content="YonFace" />
 	
   <meta name="description" content="Create an Apple-like one page scroller website (iPhone 5S website) with One Page Scroll plugin" />
 	<link rel="image_src" href="/images/notify_better_image.png" />
@@ -12,7 +12,7 @@
 	<meta content="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" property="og:url" />
 	<meta content="http://www.thepetedesign.com/images/onepage_scroll_image.png" property="og:image" />
 	
-  <link rel="shortcut icon" id="favicon" href="favicon.png"> 
+  <link rel="shortcut icon" id="favicon" href="img/favicon.png"> 
 	<link rel="canonical" href="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" />
 	
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
@@ -27,6 +27,7 @@
   <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
   <link href='css/style.css' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -41,15 +42,15 @@
         </div>
       </section>
 
-      <section class="page1">
-          <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+      <section class="page1" id="test">
+          <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline muted loop>
               <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
             <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
             <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
           </video>
         <div class="page_container">
-          <h1>One Page Scroll</h1>
-          <h2>Create an Apple-like one page scroller website (iPhone 5S website) with One Page Scroll plugin</h2>
+          <h1 id="sfirst">Entenda as emoções do seu público.</h1>
+          <h1 id="ssecond">Encontre padrões no movimento do seu estabelecimento</h1>
           <p class="credit">Created by <a href="http://www.thepetedesign.com">Pete R.</a>, Founder of <a href="http://www.bucketlistly.com" target="_blank">BucketListly</a></p>
           <div class="btns">
   	        <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
@@ -59,29 +60,32 @@
       
       <section class="page3">
         <div class="page_container">
-          <h1>Pretty Neat Eh?</h1>
-          <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
-          <div class="btns">
-            <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+          <div class="row">
+            <div class="col-md-8">
+              <h1><i class="fa fa-wifi" aria-hidden="true" id="testFont"></i></h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <h1>
+                <i class="fa fa-video-camera" aria-hidden="true" id="camera"></i>
+              </h1>
+            </div>
+            <div class="col-md-4">
+              <h1>
+                <i class="fa fa-desktop" aria-hidden="true"></i>
+              </h1>
+            </div>
           </div>
         </div>
+
       </section>
 	    
 	    <section class="page4">
         <div class="page_container">
           <h1>Ready-to-use plugin</h1>
           <h2>All you need is an HTML markup, call the script and BAM!</h2>
-          <code class="html">
-  	        &lt;div class="main"&gt;<br>
-  	          &lt;section&gt;...&lt;/section&gt;<br>
-  	          &lt;section&gt;...&lt;/section&gt;<br>
-  	          ...<br>
-  	        &lt;/div&gt;
-  	      </code>
-  	      
-  	      <code class="js">
-	          $(".main").onepage_scroll();
-	        </code>
 	      </div>
       </section>
 

@@ -54,6 +54,10 @@ $(document).ready(function(){
 	}, 7000);
 
 	setTimeout(function() {
+	  $("#sfirst").fadeOut(1000);
+	}, 10000);
+
+	setTimeout(function() {
 	  $("#ssecond").fadeIn(1000);
 	}, 10000);
 

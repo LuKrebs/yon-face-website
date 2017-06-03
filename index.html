@@ -54,18 +54,13 @@
       </section>
 
       <section class="page1" id="test">
-          <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline muted loop>
+          <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" playsinline autoplay muted loop>
               <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-            <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
-            <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+            <source src="video/video2.webm" type="video/webm">
+            <source src="video/video2.mp4" type="video/mp4">
           </video>
         <div class="page_container">
           <h1 id="sfirst">Entenda as emoções do seu público.</h1>
-          <h1 id="ssecond">Encontre padrões de movimento no seu estabelecimento</h1>
-          <p class="credit">Created by <a href="http://www.thepetedesign.com">Pete R.</a>, Founder of <a href="http://www.bucketlistly.com" target="_blank">BucketListly</a></p>
-          <div class="btns">
-  	        <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
-  	      </div>
   	    </div>
       </section>
       
@@ -186,16 +181,39 @@
                   <div class="col-md-4">
                     <h3 class="text-center subtext"> Descubra quais emoções seus clientes sentem</h3>
                   </div>
-                    <h1 id="finalButton" class="text-center" style="margin-top: -50px;"><a style="cursor: pointer;">saiba mais</a></h1>
+                    <h1 id="finalButton" class="text-center" style="margin-top: -50px;"><a href="#contato">saiba mais</a></h1>
                 </div>
               </div>
             </div>
           </div> <!--end: data -->
       </section>
 	    
-	    <section class="page4">
+	    <section class="page4" id="contato">
         <div class="page_container">
           <h1>Entre em contato conosco</h1>
+          <form action="https://formspree.io/douglas@yonface.com.br" method="POST">
+            <div class="row">
+              <div class="col-xs-6 text-left">
+                <label class="control-label">Name</label>
+                <input type="text" class="col-sm-5 form-control" name="name">
+              </div>      
+            </div>
+            <div class="row">
+              <div class="col-xs-6 text-left">
+                <label class="control-label">Email</label>
+                <input type="email" class="form-control" name="email" required>
+              </div> 
+            </div>
+            <div class="row">
+              <div class="col-xs-6 text-left">
+                <label class="control-label"> Mensagem</label>
+                <textarea class="form-control" rows="3" name="message" required></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Send" class="btn">
+            </div>
+          </form> <!--end: form -->
 	      </div>
       </section>
 

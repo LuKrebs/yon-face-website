@@ -181,18 +181,9 @@ header {
   width: 435px;
   line-height: 160%;
 }
-.main section .page_container .btns {
-  clear: both;
-  float: left;
-  text-align: center;
-  width: 435px;
-}
-.main section .page_container .btns a{
-  text-align: center;
-}
+
 .main section.page2 {
-  background: url(../img/test2.jpg) no-repeat center center;
-  background-size: cover;
+  background-color: rgb(33, 5, 70);
 }
 .main section.page2 h1 {
   text-align: center;
@@ -314,7 +305,49 @@ header {
 
 .main section.page4 .page_container form {
   color: white;
-  text-align: center;
+  margin-top: -100px;
+}
+
+.main section.page4 .page_container input {
+  margin-bottom: 5px;
+}
+.main section.page4 .page_container label { 
+  font-size: 16px;
+}
+
+.main section.page4 .page_container form input.btn {
+  color: white;
+  margin-top: 15px;
+  border: 2px solid white;
+  background-color: rgb(41, 26, 76);
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.main section.page4 .page_container form input[type="text"], .main section.page4 .page_container form input[type="email"], .main section.page4 .page_container form textarea {
+  font-size: 16px;
+  color: rgb(41,26,76);
+  font-weight: 900;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  font-family: sans-serif !important;
+}
+
+.main section.page4 .page_container input:focus, .main section.page4 .page_container textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.main section.page4 .page_container form .btn:hover {
+  transition: 0.5s;
+  background-color: white;
+  border: 2px solid rgb(41, 26, 76);
+  color: rgb(41, 26, 76); 
+  opacity: 0.9;
 }
 
 .data .container .row .col-md-4 h3.subtext {

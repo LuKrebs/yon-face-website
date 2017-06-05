@@ -5,6 +5,9 @@ $(document).ready(function(){
 		loop: true
 	});
 
+	$("body").hide();
+	$("body").fadeIn(1500);
+
 	$("#dropdownImage").on('click', function() {
 		$(this).css('opacity', "0.5");
 		$(".dropdown-menu").toggle();
@@ -40,6 +43,8 @@ $(document).ready(function(){
 	$("#finalButton").hide();
 
 
+
+
 	// make the text appear and disappear 
 	setTimeout(function() {
 	  $("#first").fadeIn(1500);
@@ -65,73 +70,47 @@ $(document).ready(function(){
 		$(this).fadeOut(1000);
 		setTimeout(function() {
 			$("#camera").fadeIn(1000);
-			$("#cameraText").fadeIn(1300);
-		}, 1000);
+			$("#cameraText").fadeIn(1200);
+		}, 1100);
 		setTimeout(function() {
 			$("#wifi").fadeIn(1000);
-			$("#wifiText").fadeIn(1300);
-		}, 3000);
-
+			$("#wifiText").fadeIn(1350);
+		}, 3500);
 
 		setTimeout(function() {
 			$("#one").fadeIn(1300);
-		}, 4000);
+		}, 4700);
 		setTimeout(function() {
 			$("#two").fadeIn(1300);
-		}, 5000);
+		}, 6100);
 		setTimeout(function() {
 			$("#three").fadeIn(1300);
-		}, 6000);
+		}, 7300);
 		setTimeout(function() {
 			$("#four").fadeIn(1300);
-		}, 7000);
+		}, 8500);
 
 
 		setTimeout(function() {
 			$("#desktop").fadeIn(1000);
 			$("#desktopText").fadeIn(1300);
-		}, 8200);
+		}, 10000);
 
 		setTimeout(function() {
 			$("#exemplos").fadeIn(1300);
-		}, 11100);
+		}, 11700);
 
 	});
 
 
 	$("#exemplos").on('click', function() {
-		$("#one").fadeOut(1000);
-		$("#four").fadeOut(1000);
-
-		setTimeout(function() {
-			$("#three").fadeOut(1100);
-			$("#two").fadeOut(1100);
-		}, 1300);
-
-		$("#camera").fadeOut(1300);
-		$("#desktop").fadeOut(1300);
-
-		setTimeout(function() {
-			$("#wifi").fadeOut(1100);
-			$("#wifiText").fadeOut(1100);
-		}, 1500);
-
-		$(this).fadeOut(1200);
-
-		setTimeout(function() {
-			$("#cameraText").fadeOut(1300);
-			$("#desktopText").fadeOut(1300);
-		}, 1200);
-
-		setTimeout(function() {
-			$(".data").fadeIn(1500);
-		}, 2000);
-		setTimeout(function() {
-			$("#finalButton").fadeIn(2000);
-		}, 2700);
-
-
+		$("section").moveTo(4);
 	});
+
+	$(".seq-button").on('click', function() {
+		$("#sequence").prev();
+	});
+
 
     var b = '<p id="estabelecimento" class="text-center">\
               <strong>Fluxo de pessoas: <strong id="green"> +21%</strong></strong>\

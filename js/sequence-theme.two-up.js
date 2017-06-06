@@ -29,8 +29,7 @@ var options = {
   phaseThreshold: false,
   preloader: true,
   fadeStepWhenSkipped: false,
-  autoPlay: true,
-  autoPlayInterval: 10000,
+  autoPlayInterval: 20000,
   reverseWhenNavigatingBackwards: true,
   swipeEvents: {
     left: function(sequence) {

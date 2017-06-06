@@ -34,209 +34,85 @@
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <script type="text/javascript">
-    window.onload = function () {
-      var chart = new CanvasJS.Chart("chartContainer", {
-
-        title:{
-          text: "Analise o Fluxo de Pessoas"              
-        },
-        data: [//array of dataSeries              
-          { //dataSeries object
-
-           /*** Change type "column" to "bar", "area", "line" or "pie"***/
-           type: "line",
-           dataPoints: [
-           { label: "banana", y: 18 },
-           { label: "orange", y: 29 },
-           { label: "apple", y: 40 },                                    
-           { label: "mango", y: 34 },
-           { label: "grape", y: 24 }
-           ]
-         }
-         ]
-       });
-
-      chart.render();
-
-      var chartTwo = new CanvasJS.Chart("chartContainerTwo", {
-
-        title:{
-          text: "Lalala"              
-        },
-        data: [//array of dataSeries              
-          { //dataSeries object
-
-           /*** Change type "column" to "bar", "area", "line" or "pie"***/
-           type: "line",
-           dataPoints: [
-           { label: "banana", y: 18 },
-           { label: "orange", y: 29 },
-           { label: "apple", y: 40 },                                    
-           { label: "mango", y: 34 },
-           { label: "grape", y: 24 }
-           ]
-         }
-         ]
-       });
-
-      chartTwo.render();
-    }
-    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
 
 </head>
 <body>
   <div class="wrapper">
 	  <div class="main">
 
-      <section class="page2">
+      <section class="page1" >
         <div class="page_container">
-          <img src="img/yonface.png" class="img-responsive pull-left" id="brandImage" style="float: left !important;" />
           <div class="dropdown">
-            <img src="https://s3.amazonaws.com/codecademy-content/projects/2/milford-school/menu.svg" width="30px" id="dropdownImage" class="pull-right">
-            <ul class="dropdown-menu pull-right">
-              <li><a href="#">Contato</a></li>
-              <li><a href="#">Login</a></li>
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/2/milford-school/menu.svg" width="30px" id="dropdownImage" class="pull-left">
+            <ul class="dropdown-menu pull-left">
+              <li><a style="cursor: pointer;" id="contactar">Contato</a></li>
+              <li><a style="cursor: pointer;">Login</a></li>
             </ul>
           </div>
+          <img src="img/yonface.png" class="img-responsive pull-right brandImage" />
           <h1 id="first" >Veja o seu negócio com os nossos olhos.</h1>
           <h1 id="second">Torne seu resultado exponencial.</h1>
-        </div>
-      </section>
-
-      <section class="page1" id="test">
-          <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" playsinline muted loop>
+          <video poster="img/imagevideo.png" playsinline autoplay muted loop>
               <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
             <source src="video/video2.webm" type="video/webm">
             <source src="video/video2.mp4" type="video/mp4">
           </video>
-        <div class="page_container">
-          <h1 id="sfirst">Entenda as emoções do seu público.</h1>
-  	    </div>
+          </div>
       </section>
       
       <section class="page3">
-          <h1><a class="text-center" id="entenda">entenda como</a></h1>
-          <div class="page_container">
+        <h1><a class="text-center" id="entenda">entenda como</a></h1>
+        <div class="page_container">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4">
+                <h1><i class="fa fa-video-camera" aria-hidden="true" id="camera"></i></h1>
+              </div>
+              <div class="col-md-4">
+                <h1><i class="fa fa-wifi" aria-hidden="true" id="wifi"></i></h1>
+              </div>
+              <div class="col-md-4">
+                <h1><i class="fa fa-desktop" aria-hidden="true" id="desktop"></i></h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <h2 id="cameraText">O dispositivo portátil identifica<br/> e lê a face humana.</h2>
+              </div>
+              <div class="col-md-4">
+                <h2 id="wifiText">O software de inteligência<br/> artificial reconhece:<br/></h2>
+                <div class="row">
+                  <div class="col-md-6 text-center">
+                    <h2 id="one">Nível de atenção</h2><br/>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <h2 id="two">Idade</h2><br/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h2 id="three">Gênero</h2><br/>                      
+                  </div>
+                  <div class="col-md-6">
+                    <h2 id="four">Emoções</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h2 id="desktopText">Uma Plataforma de Análise</br> te ajuda a decidir melhor.</h2>
+              </div>
+            </div>
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-4">
-                  <h1><i class="fa fa-video-camera" aria-hidden="true" id="camera"></i></h1>
-                </div>
-                <div class="col-md-4">
-                  <h1><i class="fa fa-wifi" aria-hidden="true" id="wifi"></i></h1>
-                </div>
-                <div class="col-md-4">
-                  <h1><i class="fa fa-desktop" aria-hidden="true" id="desktop"></i></h1>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <h2 id="cameraText">O dispositivo portátil identifica<br/> e lê a face humana.</h2>
-                </div>
-                <div class="col-md-4">
-                  <h2 id="wifiText">O software de inteligência<br/> artificial reconhece:<br/></h2>
-                  <div class="row">
-                    <div class="col-md-6 text-center">
-                      <h2 id="one">Nível de atenção</h2><br/>
-                    </div>
-                    <div class="col-md-6 text-center">
-                      <h2 id="two">Idade</h2><br/>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h2 id="three">Gênero</h2><br/>                      
-                    </div>
-                    <div class="col-md-6">
-                      <h2 id="four">Emoções</h2>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <h2 id="desktopText">Uma Plataforma de Análise</br> te ajuda a decidir melhor.</h2>
-                </div>
-              </div>
-              <div class="container-fluid">
-                <div class="row">
-                  <h1 id="exemplos"><a style="cursor: pointer;" class="text-center">experimente</a></h1>
-                </div>
+                <h1 id="exemplos"><a style="cursor: pointer;" class="text-center">experimente</a></h1>
               </div>
             </div>
           </div>
-
-          <div class="data">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4 text-center" id="idteste">
-                  <h3>Análise do Fluxo de pessoas</h3> 
-                  <img id="mychart" src="img/chart1correto.png" class="img-responsive"> 
-                  <div class="row mov sec">
-                    <div class="col-md-12 text-center">
-                      <p id='date'></p>
-                    </div>
-                  </div>  
-                  <div class="row mov">
-                    <div class="col-md-12 text-center">
-                      <ul>
-                        <a style="cursor: pointer;" onclick="changeChartTwo()"><li id="buttonactivedtwo">Dia</li></a>
-                        <a style="cursor: pointer;" onclick="changeChart()"><li id="buttonactivedone">Semana</li></a>
-                        <a style="cursor: pointer;" onclick="changeChartThree()"><li id="buttonactivedthree">Mês</li></a>
-                      </ul>
-                    </div>
-                  </div> 
-                </div>
-                <div class="col-md-4 text-center" id="idtestetwo">
-                  <h3 style="margin-left:-20px; ">Análise de Gênero</h3>
-                  <img id="mypiechart" src="img/piechart1.png" class="img-responsive"> 
-                  <div class="row mov sec">
-                    <div class="col-md-12 text-center">
-                      <p id='datetwo'><strong>Analise o gênero do seu público:</strong></p>
-                    </div>
-                  </div> 
-                  <div class="row mov">
-                    <div class="col-md-12 text-center">
-                      <ul>
-                        <a style="cursor: pointer;" onclick="changeChartPieOne()"><li id="buttonactivedfour">Dia</li></a>
-                        <a style="cursor: pointer;" onclick="changeChartPieTwo()"><li id="buttonactivedfive">Semana</li></a>
-                        <a style="cursor: pointer;" onclick="changeChartPieThree()"><li id="buttonactivedsix">Mês</li></a>
-                      </ul>
-                    </div>
-                  </div> 
-                </div>
-                <div class="col-md-4 text-center" id="idtestethree">
-                  <h3>Análise de Emoções</h3>
-                  <img id="mybarchart" src="img/barchart1.png" class="img-responsive"> 
-                  <div class="row mov sec">
-                    <div class="col-md-12 text-center">
-                      <p id='datethree'><strong>Analise as emoções predominantes:</strong></p>
-                    </div>
-                  </div> 
-                  <div class="row mov">
-                    <div class="col-md-12 text-center">
-                      <ul>
-                        <a style="cursor: pointer;" onclick="changeChartBarOne()"><li id="buttonactivedseven">Dia</li></a>
-                        <a style="cursor: pointer;" onclick="changeChartBarTwo()"><li id="buttonactivedeight">Semana</li></a>
-                        <a style="cursor: pointer;" onclick="changeChartBarThree()"><li id="buttonactivednine">Mês</li></a>
-                      </ul>
-                    </div>
-                  </div> 
-                </div>
-                <div class="row">
-                  <div class="col-md-4">
-                    <h3 class="text-center subtext"> Entenda o que afeta seu negócio</h3>
-                  </div>
-                  <div class="col-md-4">
-                    <h3 class="text-center subtext"> Saiba quem é seu real público</h3>
-                  </div>
-                  <div class="col-md-4">
-                    <h3 class="text-center subtext"> Descubra quais emoções seus clientes sentem</h3>
-                  </div>
-                </div>
-              </div>
-              <h1><a style="cursor: pointer;" id="finalButton"></a></h1>
-            </div>
-          </div> <!--end: data -->
+        </div>
       </section>
 
       <section class="page5">
@@ -244,59 +120,58 @@
           <div id="sequence" class="seq">
 
             <div class="seq-nav">
-              <!--
-              <ul role="navigation" aria-label="Pagination" class="seq-pagination">
-                <li><a href="#step1" rel="step1" title="Go to slide 1"><span class="numeral">1</span><span class="seq-tooltip">Powered by Sequence.js</span></a></li>
-                <li><a href="#step2" rel="step2" title="Go to slide 2"><span class="numeral">2</span><span class="seq-tooltip">Create Unique Animated Themes</span></a></li>
-                li><a href="#step3" rel="step3" title="Go to slide 3"><span class="numeral">3</span><span class="seq-tooltip">Rapid Development of Step-Based Applications</span></a></li>
-              </ul>-->
 
               <button class="seq-next seq-swipe" type="button" aria-label="Next">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21.5" viewBox="30.4 23.7 20 21.5" enable-background="new 30.4 23.7 20 21.5" role="img" aria-labelledby="title-swipe-icon"><title id="title-swipe-icon">Swipe Icon</title><path d="M33 23.7c-.1 0-.3.1-.4.2l-2.1 2.1c-.2.2-.2.6 0 .9l2.1 2.1c.2.2.6.2.9 0s.2-.6 0-.9l-1.1-1.1h5.2c.3 0 .6-.3.6-.6s-.3-.6-.6-.6h-5.2l1.1-1.1c.2-.2.3-.6 0-.9-.1-.1-.2-.1-.5-.1zm14.6 0c-.3 0-.6.3-.6.7 0 .1.1.3.2.4l1.1 1.1h-5.2c-.3 0-.6.3-.6.6s.2.5.6.5h5.2l-1.1 1.1c-.2.2-.2.6 0 .9s.6.2.9 0l2.1-2.1c.2-.2.2-.6 0-.9l-2.1-2.1c-.2-.2-.3-.2-.5-.2zm-7.3 1.3c-.8 0-1.4.6-1.4 1.4v8.8c-.5-.6-1.1-1.3-1.6-1.6-.3-.2-.7-.4-1.1-.4-.7 0-1.2.5-1.3 1.2-.1.8.4 1.6.8 2.2l1.5 2.4 1.2 1.9c.6 1 .7 1.8.7 2.9v1.2c0 .1.1.2.2.2h8.2c.1 0 .2-.1.2-.2.1-.8.2-1.6.4-2.4.7-2 1.3-3.9 1.3-6.4v-4c0-.8-.6-1.4-1.4-1.4-.4 0-.7.1-1.2.6 0-.8-.6-1.4-1.4-1.4-.5 0-.9.2-1.2.6-.1-.7-.7-1.2-1.4-1.2-.5 0-.9.2-1.2.6v-3.5c.2-.8-.5-1.5-1.3-1.5z"/></svg>
               </button>
             </div>
 
-            <button class="seq-next-button seq-next" type="button" aria-label="Next">
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="16.1 -0.7 60 60" enable-background="new 16.1 -0.7 60 60" role="img" aria-labelledby="title-down-arrow"><title id="title-down-arrow">Down/Next Arrow</title><path d="M46.407 1.399l27.435 27.435-28.213 28.213-27.435-27.435z"/><path fill="#fff" d="M46.1 59.3l-30-30 30-30 30 30-30 30zm-22.9-30l22.9 22.9 22.9-22.9-22.9-22.9-22.9 22.9zM39.278 23.872l11.031 11.031-4.172 4.172-11.031-11.031zM57.172 28.079l-11.031 11.031-4.172-4.172 11.031-11.031z"/></svg>
-            </button>
+            <div>
+              <button class="btn seq-next-button seq-next" id="testButton"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></button>
+              <button class="btn seq-next-button" id="testButtonTwo">saiba mais</button>
+            </div>
 
             <div class="seq-screen">
               <ul class="seq-canvas">
                 <li class="step1 seq-in">
-                  <div data-seq class="seq-feature seq-half">
-                    <div id="chartContainer" style="height: 300px; width: 100%;">
+                  <div data-seq class="seq-feature seq-half-two">
+                    <div id="myCanvasChart">
+                      <h2>Análise do Fluxo de Pessoas</h2>
+                      <canvas id="myChart"></canvas>
                     </div>
                   </div>
-                  <div data-seq class="seq-content seq-half seq-valign">
+                  <div data-seq class="seq-content seq-half seq-valign" style="background-color: rgb(33, 3, 71);">
                     <div>
-                      <h2>Análise do Fluxo de Pessoas</h2>
-                      <h3>Demanda quantificada.</h3>
+                      <h2>Demanda quantificada</h2>
+                      <h2>Previsão de movimento</h2>
                     </div>
                   </div>
                 </li>
                 <li class="step2">
-                  <div data-seq class="seq-feature seq-half seq-half-right">
-                    <div id="chartContainerTwo" style="height: 300px; width: 100%;">
+                  <div data-seq class="seq-feature seq-half-two">
+                    <div id="myCanvasChartTwo">
+                      <h2>Análise Emocional</h2>
+                      <canvas id="myChartTwo"></canvas>
                     </div>
                   </div>
-                  <div data-seq class="seq-content seq-half seq-half-left seq-valign">
+                  <div data-seq class="seq-content seq-half seq-half-left seq-valign" style="background-color: rgb(33, 3, 71); ">
                     <div>
-                      <h2>Análise de Emoções</h2>
-                      <h3>Satisfação do cliente medida.</h3>
+                      <h2>Satisfação do cliente medida</h2>
+                      <h2>Impacto das emoções no resultado</h2>
                     </div>
                   </div>
                 </li>
                 <li class="step3">
-                  <div data-seq class="seq-feature seq-half seq-half-right">
-                    <div style="background-image: url(img/purple-flowers.jpg)">
-                      <!-- This image is hidden via CSS and is only here for accessibility. The image shown is actually a background-image set via an inline style above -->
-                      <img src="img/purple-flowers.jpg" alt="A close-up of several purple flowers with yellow centers. A few rain drops sit on the pettels" />
+                  <div data-seq class="seq-feature seq-half-two seq-half-right">
+                    <div id="myCanvasChartThree">
+                      <h2>Atratividade de produtos</h2>
+                      <canvas id="myChartThree"></canvas>
                     </div>
                   </div>
-                  <div data-seq class="seq-content seq-half seq-half-left seq-valign">
+                  <div data-seq class="seq-content seq-half seq-half-left seq-valign" style="background-color: rgb(33, 3, 71); ">
                     <div>
-                      <h2>Análise de Gênero por horário</h2>
-                      <h3>Foco no público certo, na hora certa.</h3>
+                      <h2>Mensure o potencial de um produto</h2>
+                      <h2>Descubra se ele é ou não atrativo</h2>
                     </div>
                   </div>
                 </li>
@@ -339,6 +214,7 @@
                 </div>
               </div>
             </div>
+            <img src="img/yonface.png" class="img-responsive newBrandImage" />
           </div>
       </section>
 
@@ -349,7 +225,199 @@
   <script src="js/hammer.min.js"></script>
   <script src="js/sequence.min.js"></script>
   <script src="js/sequence-theme.two-up.js"></script>
+
+  <script>
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+            datasets: [{
+                label: '# 2016',
+                data: [1248, 1917, 3307, 1508, 2114, 1323,1248, 1917, 1507, 2408, 2114, 323],
+                backgroundColor: [
+                    'rgba(255, 20, 15, 0.5)'
+                ],
+                borderColor: [
+                    'rgb(255, 20, 15)'
+                ],
+                borderWidth: 1
+            },
+            {
+                label: '# 2017',
+                data: [2253, 3102, 5302, 2791, 2107, 813,2253, 3102, 2302, 3091, 2107, 813],
+                backgroundColor: [
+                    'rgba(255, 225, 78, 0.5)'
+                ],
+                borderColor: [
+                    'rgb(255, 225, 78)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            },
+            tooltips: {
+                mode: 'x',
+                displayColors: false
+            },
+            legend: {
+              position: 'bottom'
+            },
+            title: {
+              display: true,
+              position: 'top',
+              text: 'Pessoas que entraram no seu estabelecimento / mês',
+              fontColor: 'rgb(41, 26, 76)'
+            }
+        }
+    });
+
+    var ctxTwo = document.getElementById("myChartTwo").getContext('2d');
+    var myChartTwo = new Chart(ctxTwo, {
+        type: 'line',
+        data: {
+            labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+            datasets: [
+            /*{
+                label: '# Neutro',
+                data: [10, 15, 20, 22, 11, 12, 15, 13, 9, 18, 14, 22],
+                backgroundColor: [
+                    'rgba(235, 209, 105, 0.6)'
+                ],
+                borderColor: [
+                    'rgba(235, 209, 105, 1)'
+                ],
+                borderWidth: 1
+            },*/
+            {
+                label: '# Alegria',
+                data: [10*2, 15*2, 20*2, 22*2, 14*2, 18*1.3, 8*1.3, 20*1.3, 10*1.3, 15*1.3, 20*1.3, 22*1.3],
+                backgroundColor: [
+                    'rgba(46, 204, 113, 0.4)'
+                ],
+                borderColor: [
+                    'rgba(46, 204, 113, 1)'
+                ],
+                borderWidth: 1
+            },
+            {
+                label: '# Surpresa',
+                data: [10*1.3, 15*1.3, 20*1.3, 22*1.3, 14*1.3, 18*1.2, 8*1.235, 20*1.235, 10*1.235, 15*1.235, 20*1.235, 22*1.235],
+                backgroundColor: [
+                    'rgba(103, 199, 144, 0.6)'
+                ],
+                borderColor: [
+                    'rgb(103, 199, 144)'
+                ],
+                borderWidth: 1
+            },
+             {
+                label: '# Raiva',
+                data: [3, 5, 4, 5, 18, 6, 3, 5, 7, 12, 3, 5],
+                backgroundColor: [
+                    'rgba(202, 90, 90, 0.6)'
+                ],
+                borderColor: [
+                    'rgb(202, 90, 90)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            },
+            tooltips: {
+                mode: 'x',
+                displayColors: false
+            },
+            legend: {
+              position: 'bottom'
+            },
+            title: {
+              display: true,
+              position: 'top',
+              text: 'Emoções predominantes dos clientes que entraram em seu estabelecimento em %',
+              fontColor: 'rgb(41, 26, 76)'
+            }
+        }
+    });
+
+    var ctxThree = document.getElementById("myChartThree").getContext('2d');
+    var myChartThree = new Chart(ctxThree, {
+        type: 'line',
+        data: {
+            labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+            datasets: [
+            {
+                label: '# Produto X',
+                data: [10*2, 15*2, 20*2, 22*2, 14*2, 18*1.3, 8*1.3, 20*1.3, 10*1.3, 15*1.3, 20*1.3, 22*1.3],
+                backgroundColor: [
+                    'rgba(33, 3, 71,0.5)'
+                ],
+                borderColor: [
+                    'rgb(33, 3, 71)'
+                ],
+                borderWidth: 1
+            },
+            {
+                label: '# Produto Y',
+                data: [25, 44, 31, 18, 37, 47, 60, 63, 51, 68, 71, 64],
+                backgroundColor: [
+                    'rgba(142, 142, 144, 0.6)'
+                ],
+                borderColor: [
+                    'rgba(142, 142, 144, 1)'
+                ],
+                borderWidth: 1
+            },
+             {
+                label: '# Produto Z',
+                data: [13, 35, 24, 25, 18, 16, 33, 45, 7, 12, 3, 5],
+                backgroundColor: [
+                    'rgba(29, 155, 114, 0.5)'
+                ],
+                borderColor: [
+                    'rgb(29, 155, 114)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            },
+            tooltips: {
+                mode: 'x',
+                displayColors: false
+            },
+            legend: {
+              position: 'bottom'
+            },
+            title: {
+              display: true,
+              position: 'top',
+              text: 'Emoções predominantes dos clientes que entraram em seu estabelecimento em %',
+              fontColor: 'rgb(41, 26, 76)'
+            }
+        }
+    });
+    </script>
+
 </body>
 </html>
-
-

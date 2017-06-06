@@ -24,7 +24,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', sans-serif !important;
 }
 
 .seq {
@@ -308,7 +308,7 @@ body {
   background: white;
   text-align: center;
   font-size: 0;
-  font-family: 'Merriweather', serif;
+  font-family: 'Dosis', sans-serif !important;
   /* Hide the content until it is active and fades in */
   opacity: 0;
   /* When active, move the content over .3s */
@@ -323,11 +323,11 @@ body {
 }
 
 .seq .seq-content h2 {
-  margin: 0;
-  margin-bottom: .2em;
-  font-size: 1.625em;
+  margin-bottom: 1.625em;
+  font-size: 3.325em;
   font-weight: 700;
-  color: rgb(41, 26, 76);
+  color: white;
+  font-family: 'Dosis', sans-serif !important;
 }
 
 .seq .seq-content h3 {
@@ -335,7 +335,8 @@ body {
   line-height: 160%;
   font-size: 1em;
   font-weight: 600;
-  color: rgb(41, 26, 76);
+  color: white;
+  font-family: 'Dosis', sans-serif !important;
 }
 
 .seq .seq-content > div {
@@ -373,6 +374,11 @@ body {
   height: 200px;
   overflow: hidden;
   background: #333;
+}
+
+.seq .seq-feature img {
+  margin: 25% 5%;
+  width: 90%;
 }
 
 .seq .seq-feature > div {
@@ -488,25 +494,31 @@ body {
   .seq .seq-next-button {
     cursor: pointer;
     position: absolute;
+    padding: 15px 40px;  
+    background-color: rgb(33, 3, 71);
     z-index: 10;
-    bottom: 1em;
-    left: 10%;
-    width: 66px;
+    bottom: 0.5em;
+    left: 50%;
+    /* width: 66px; */
     color: white;
-    -webkit-transform: translateX(-50%) translateZ(20px);
-    -ms-transform: translateX(-50%) translateZ(20px);
-    transform: translateX(-50%) translateZ(20px);
+    -webkit-transform: translateX(-50%) translateZ(100px);
+    -ms-transform: translateX(-50%) translateZ(100px);
+    transform: translateX(-50%) translateZ(100px);
     -webkit-transition-duration: .1s;
     transition-duration: .1s;
     -webkit-transition-property: -webkit-transform;
     transition-property: transform;
+    border: 2px solid transparent;
+    font-size: 1.2em;
   }
+
 
   .seq.seq-no-touch .seq-next-button:hover {
     /* Only add a hover effect on non-touch devices */
-    -webkit-transform: translateX(-50%) translateZ(100px) scale(1.2);
-    -ms-transform: translateX(-50%) translateZ(100px) scale(1.2);
-    transform: translateX(-50%) translateZ(100px) scale(1.2);
+    background-color: white;
+    color: rgb(33, 3, 71);
+    transition: 0.5s;
+    border: 2px solid rgb(33,3,71);
   }
 
   .seq .seq-screen,
@@ -529,7 +541,14 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 50%;
+    width: 30%;
+  }
+
+  .seq-half-two {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 70%; 
   }
 
   .seq .seq-nav {
@@ -704,7 +723,7 @@ body {
   /* Increase the title font-size in two-up layout */
 
   .seq .seq-content h2 {
-    font-size: 2.25em;
+    font-size: 2.35em;
   }
 }
 

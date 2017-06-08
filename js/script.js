@@ -44,17 +44,19 @@ $(document).ready(function(){
 
 	$("#testButtonTwo").hide();
 
-	var test = 0;
+	var test = 1;
 
-	$("#testButton").on('click', function() {
+	$(".count").on('click', function() {
 		test += 1;
-		console.log(test);
 		if (test === 3) {
-			$(this).animate({left: "+=500px"}, 2000);
+			$(this).animate({left: "+=40%"}, 2000);
 			test += 1;
-			setTimeout(function() {
-				$("#testButtonTwo").fadeIn(1500);
-			}, 1500);
+			var x = screen.width
+			if (x > 760) {
+				setTimeout(function() {
+					$("#testButtonTwo").fadeIn(1500);
+				}, 1500);
+			}
 		}
 		else {
 			return false;
@@ -116,9 +118,12 @@ $(document).ready(function(){
 			$("#desktopText").fadeIn(1300);
 		}, 10000);
 
-		setTimeout(function() {
-			$("#exemplos").fadeIn(1300);
-		}, 11700);
+		var x = screen.width;
+		if (x > 600) {
+			setTimeout(function() {
+				$("#exemplos").fadeIn(1300);
+			}, 11700);
+		}
 
 	});
 
@@ -130,5 +135,16 @@ $(document).ready(function(){
 	$(".seq-button").on('click', function() {
 		$("#sequence").prev();
 	});
+
+	
+	var x = screen.width;
+
+	if(x < 600) {
+		$(".responsiveDesignTest").removeClass('col-md-4');
+		$(".responsiveDesignTest").removeClass('col-sm-4');
+		$(".responsiveDesignTest").removeClass('col-xs-4');
+		$(".responsiveDesignTest").addClass('col-xs-12');
+		$("#exemplos").hide();
+	}
 
 });

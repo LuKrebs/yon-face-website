@@ -263,51 +263,60 @@ header {
 }
 
 #myCanvasChart {
-  margin-top: 10%;
-  width: 90%;
+  margin: 5% auto;
+  width: 80%;
   height: 50%;
-  margin-right: 7%;
-  margin-left: 4%;
 }
 
 #myCanvasChartTwo {
-  margin-top: 10%;
-  width: 90%;
+  margin: 5% auto;
+  width: 80%;
   height: 50%;
-  margin-right: 7%;
-  margin-left: 4%; 
 }
 #myCanvasChartThree {
-  margin-top: 10%;
-  width: 90%;
+  margin: 5% auto;
+  width: 80%;
   height: 50%;
-  margin-right: 7%;
-  margin-left: 4%; 
 }
 #myCanvasChart h2 {
   color: rgb(41,26,76) !important;
-  margin-bottom: 0.325em;
-  font-size: 2.35em;
+  margin-bottom: 0.325vw;
+  font-size: 2.35vw;
   font-weight: 700;
   text-align: center;
   font-family: 'Dosis', sans-serif !important;
 }
  #myCanvasChartTwo h2 {
   color: rgb(41,26,76) !important;
-  margin-bottom: 0.325em;
-  font-size: 2.35em;
+  margin-bottom: 0.325vw;
+  font-size: 2.35vw;
   font-weight: 700;
   text-align: center;
   font-family: 'Dosis', sans-serif !important;
  }
   #myCanvasChartThree h2 {
   color: rgb(41,26,76) !important;
-  margin-bottom: 0.325em;
-  font-size: 2.35em;
+  margin-bottom: 0.325vw;
+  font-size: 2.35vw;
   font-weight: 700;
   text-align: center;
   font-family: 'Dosis', sans-serif !important;
  }
+
+p i.fa-arrow-circle-left, p i.fa-arrow-circle-right {
+  color: white;
+  background-color: rgb(41,26,76);
+  font-size: 2vw;
+  padding: 1vw 2.5vw;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+p i.fa-arrow-circle-left:hover, p i.fa-arrow-circle-right:hover {
+  background-color: white;
+  color: rgb(41,26,76); 
+  border: 2px solid rgb(41,26,76);
+  transition: 0.6s;
+}
 .main section.page5 #testButtonTwo {
   text-transform: uppercase !important;
   font-size: 1.235em !important;
@@ -333,12 +342,7 @@ header {
   transition: 0.5s;
 }
 
-..main section.page3 .page_container #exemplos {
-  position: absolute;
-  cursor: pointer;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+.main section.page3 .page_container #exemplos {
   margin-top: -50px;
 }
 
@@ -350,8 +354,11 @@ header {
 }
 
 #cameraText, #desktopText, #wifiText, #one, #two, #three, #four {
-  line-height: 140%;
+  /* line-height: 140%; */
   color: rgba(41, 26, 76, 1);
+}
+#one, #two, #three, #four {
+  margin-top: -5px;
 }
 
 .main section.page4 {
@@ -359,12 +366,14 @@ header {
 }
 
 .main section.page4 h1 {
-  margin-top: -100px;
+  padding: 0 !important;
+  margin: 5% auto;
+
 }
 
 .main section.page4 .page_container form {
   color: white;
-  margin-top: -100px;
+  margin: 5% auto;
 }
 
 .main section.page4 .page_container input {
@@ -515,4 +524,47 @@ video {
   from { opacity: 1; }
   to { opacity: 0; }
 }
+
+@media (max-width: 780px) {
+  #cameraText, #desktopText, #wifiText, #one, #two, #three, #four {
+    font-size: 20px;
+  }
+  .main section.page1 h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 770px) {
+  #myCanvasChart h2, #myCanvasChartTwo h2, #myCanvasChartThree h2 {
+    font-size: 1vw;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .main section.page3 h1 a#entenda {
+    font-size: 30px;
+  }
+  .main section.page3 .page_container #exemplos {
+    margin-top: 10px;
+  }
+  .main section.page1 h1 {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .main section.page3 h1 a#entenda {
+    font-size: 25px;
+  }
+  .main section.page1 h1 {
+    font-size: 30px !important;
+  }
+  .main section.page1 img.brandImage {
+    width: 110px;
+  }
+}
+
+
+
 

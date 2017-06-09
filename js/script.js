@@ -1,9 +1,11 @@
 $(document).ready(function(){
 	$(".main").onepage_scroll({
 		sectionContainer: "section",
-		responsiveFallback: 600,
+		responsiveFallback: 768,
 		loop: true
 	});
+
+	var x = screen.width;
 
 	$("body").hide();
 	$("body").fadeIn(1900);
@@ -52,7 +54,7 @@ $(document).ready(function(){
 			$(this).animate({left: "+=40%"}, 2000);
 			test += 1;
 			var x = screen.width
-			if (x > 760) {
+			if (x > 770) {
 				setTimeout(function() {
 					$("#testButtonTwo").fadeIn(1500);
 				}, 1500);
@@ -135,9 +137,6 @@ $(document).ready(function(){
 	$(".seq-button").on('click', function() {
 		$("#sequence").prev();
 	});
-
-	
-	var x = screen.width;
 
 	if(x < 600) {
 		$(".responsiveDesignTest").removeClass('col-md-4');

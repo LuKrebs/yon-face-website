@@ -218,18 +218,18 @@ header {
 #myCanvasChart {
   margin: 5% auto;
   width: 80%;
-  height: 50%;
+  height: 70% !important;
 }
 
 #myCanvasChartTwo {
   margin: 5% auto;
   width: 80%;
-  height: 50%;
+  height: 70% !important;
 }
 #myCanvasChartThree {
   margin: 5% auto;
   width: 80%;
-  height: 50%;
+  height: 70% !important;
 }
 #myCanvasChart h2 {
   color: rgb(41,26,76) !important;
@@ -414,11 +414,9 @@ i.fa-video-camera, i.fa-wifi, i.fa-desktop {
 
 body.disabled-onepage-scroll .onepage-wrapper  section {
   min-height: 100%;
-  height: auto;
 }
 
 body.disabled-onepage-scroll .main section .page_container {
-  padding: 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

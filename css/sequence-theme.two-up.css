@@ -45,10 +45,10 @@ body {
 .seq .seq-screen,
 .seq .seq-canvas,
 .seq .seq-canvas > * {
-  /* Reset the canvas and steps for more browser consistency */
+  /* Reset the canvas and steps for more browser consistency 
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none;*/
 }
 
 .seq .seq-canvas {
@@ -302,7 +302,7 @@ body {
   font-size: 0;
   font-family: 'Dosis', sans-serif !important;
   /* Hide the content until it is active and fades in */
-  opacity: 0;
+
   /* When active, move the content over .3s */
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -363,7 +363,7 @@ body {
 }
 
 .seq .seq-feature {
-  height: 200px;
+  /* height: 200px;*/
   overflow: hidden;
   background: white;
 }
@@ -377,7 +377,7 @@ body {
   width: 100%;
   height: 100%;
   background-repeat: none;
-  background-position: 50% 50%;
+  /* background-position: 50% 50%;*/
   background-size: cover;
 }
 
@@ -430,6 +430,12 @@ body {
   margin-top: -16px;
 }
 
+@media(max-width: 1440px) {
+  .seq .seq-content h2 {
+    font-size: 2.725em;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .seq.seq-reversed .seq-content {
     /* Don't allow content to reset to its start position when reversed */
@@ -440,10 +446,11 @@ body {
   }
 }
 
+
 @media only screen and (min-width: 769px) {
   html,
   body {
-    /* Make the theme fullscreen */
+    /* Make the theme fullscreen*/
     height: 100%;
   }
 
@@ -453,6 +460,9 @@ body {
 
   .seq .seq-canvas > * {
     overflow: hidden;
+  }
+  .seq .seq-content h2 {
+    font-size: 1.025em;
   }
 
   .seq .seq-attribution {
@@ -714,22 +724,22 @@ body {
 @media only screen and (min-width: 769px) and (min-height: 400px) {
   /* Increase the title font-size in two-up layout */
 
-  .seq .seq-content h2 {
-    font-size: 2.35em;
+  .seq .seq-content {
   }
 }
 
 @media only screen and (min-height: 520px) and (max-width: 768px) {
-  /* Increase the height of the hero image in one-up layout */
+  /* Increase the height of the hero image in one-up layout  */
 
   .seq .seq-nav {
     top: 300px;
-  }
+  } 
 
   .seq .seq-feature {
     height: 300px;
   }
 }
+
 
 @media only screen and (min-height: 620px) and (max-width: 768px) {
   /* Increase the height of the hero image in one-up layout */

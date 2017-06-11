@@ -52,8 +52,13 @@
 	  <div class="main">
 	    
       <section class="page1">
+          <video poster="img/imagevideo.png" playsinline autoplay muted loop>
+              <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+            <source src="vide2o/video.webm" type="video/webm">
+            <source src="vide2o/video.mp4" type="video/mp4">
+            <source src="vide2o/video.ogg" type="video/ogg"/>  
+          </video>
         <div class="page_container">
-
             <div class="dropdown">
               <img src="https://s3.amazonaws.com/codecademy-content/projects/2/milford-school/menu.svg" width="30px" id="dropdownImage" class="pull-left">
               <ul class="dropdown-menu pull-left">
@@ -67,11 +72,6 @@
             <h1 id="first" class="text-center">Veja o seu negócio com os nossos olhos.</h1>
             <h1 id="second" class="text-center">Torne seu resultado exponencial.</h1>
           </div>
-          <video poster="img/imagevideo.png" playsinline autoplay muted loop>
-              <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-            <source src="video/video.webm" type="video/webm">
-            <source src="video/video.mp4" type="video/mp4">
-          </video>
         </div>
       </section>
 	    

@@ -29,7 +29,7 @@ body {
 
 /* video style */
 video { 
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -362,8 +362,6 @@ body.disabled-onepage-scroll .onepage-wrapper  section.page3 {
 }
 
 body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
-
-  margin-top: 150px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -371,10 +369,6 @@ body.disabled-onepage-scroll .main section .page_container, body.disabled-onepag
 
 body.disabled-onepage-scroll  section .page_container h1{
   text-align: center;
-}
-body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
-  text-align: center;
-  width: 100%;
 }
 
 body.disabled-onepage-scroll .main section.page1 > img {
@@ -387,12 +381,6 @@ body.disabled-onepage-scroll .main section > img {
   position: relative;
   max-width: 80%;
   bottom: 0;
-}
-body.disabled-onepage-scroll code {
-  width: 95%;
-  margin: 0 auto 25px;
-  float: none;
-  overflow: hidden;
 }
 
 body.disabled-onepage-scroll .main section.page3 .page_container {

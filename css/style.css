@@ -248,14 +248,10 @@ i.fa-video-camera, i.fa-wifi, i.fa-desktop {
   letter-spacing: -1px;
 }
 .main section.page3 h3 {
-  padding: 10px 4px;
-  margin-bottom: 0;
-  margin-top: 0;
+  padding: 7px 4px;
+  margin: 0 auto 10px;
   font-weight: 600;
   font-size: 20px;
-}
-#myChart, #myChartTwo, #myChartThree {
-  height: 320px !important;
 }
 
 #myCanvasChart, #myCanvasChartTwo, #myCanvasChartThree {
@@ -407,7 +403,7 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
   }
   #one, #two, #three, #four {
     color: rgba(41, 26, 76, 1);
-    margin-top: 5px !important;
+    margin-top: 5px !important; 
     margin-bottom: 5px !important;
     font-size: 45px;
   }
@@ -416,6 +412,10 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     margin-bottom: 45px;
     color: rgb(152,152,152);
     font-size: 200px;
+  }
+  #myChart, #myChartTwo, #myChartThree {
+    height: auto !important;
+    margin-top: -60px;
   }
 }
 
@@ -441,6 +441,10 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
   i.fa-video-camera, i.fa-wifi, i.fa-desktop {
     font-size: 150px;
   }
+  #myChart, #myChartTwo, #myChartThree {
+    margin-top: -30px;
+    height: 410px !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -454,7 +458,7 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     margin-top: 35px;
     margin-bottom: 25px;
     color: rgb(152,152,152);
-    font-size: 120px;
+    font-size: 120px; 
   }
   #cameraText, #desktopText, #wifiText {
     color: rgba(41, 26, 76, 1);

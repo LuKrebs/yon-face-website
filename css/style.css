@@ -101,7 +101,7 @@ video {
 .main section.page1 h1#first {
   text-align: center !important;
   position: relative;
-  margin: 150px auto;
+  margin: 100px auto 40px auto;
 }
 .main section.page1 h1#second {
    text-align: center !important;
@@ -393,25 +393,25 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     font-size: 80px; 
   }
   .main section.page1 h1#first {
-    margin: 250px auto 180px auto;
+    margin: 170px auto 70px auto;
   }
   #cameraText, #desktopText, #wifiText {
     color: rgba(41, 26, 76, 1);
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-    font-size: 55px;
+    font-size: 45px;
   }
   #one, #two, #three, #four {
     color: rgba(41, 26, 76, 1);
     margin-top: 5px !important; 
     margin-bottom: 5px !important;
-    font-size: 45px;
+    font-size: 35px;
   }
   i.fa-video-camera, i.fa-wifi, i.fa-desktop {
     margin-top: 45px;
     margin-bottom: 45px;
     color: rgb(152,152,152);
-    font-size: 200px;
+    font-size: 180px;
   }
   #myChart, #myChartTwo, #myChartThree {
     height: auto !important;
@@ -424,22 +424,22 @@ body.disabled-onepage-scroll .main section.page3 .page_container {
     font-size: 60px; 
   }
   .main section.page1 h1#first {
-    margin: 180px auto 130px auto;
+    margin: 160px auto 80px auto;
   }
   #cameraText, #desktopText, #wifiText {
     color: rgba(41, 26, 76, 1);
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-    font-size: 35px;
+    font-size: 30px;
   }
   #one, #two, #three, #four {
     color: rgba(41, 26, 76, 1);
     margin-top: 5px !important;
     margin-bottom: 5px !important;
-    font-size: 30px;
+    font-size: 25px;
   }
   i.fa-video-camera, i.fa-wifi, i.fa-desktop {
-    font-size: 150px;
+    font-size: 130px;
   }
   #myChart, #myChartTwo, #myChartThree {
     margin-top: -30px;
